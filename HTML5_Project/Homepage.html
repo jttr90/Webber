@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<head>
+<title>Food Project</title>
+<link rel="stylesheet" href="Project 1.css" />
+<style type="text/css">
+
+div.P   {width: 310px;
+         margin: auto;
+}
+ 
+</style>
+<script type="text/javascript"> //This is a javascript function for a picture slide show with four pictures.
+var image1 = new Image();
+image1.src = "Images/Shrimp.PNG"
+var image2 = new Image();
+image2.src = "Images/Beets.JPG"
+var image3 = new Image();
+image3.src = "Images/Scalops.JPG"
+var image4 = new Image();
+image4.src = "Images/Steak.PNG"
+</script>
+</head>
+
+
+<body>
+<section id="main">
+<header>
+	<h1>Cooking</h1>
+</header>
+
+<nav>
+<a href="Recipies.html">About Food</a>
+<a href="Comments.html">Comments</a>
+<a href="Contact.html">Contact Page</a>
+</nav>
+
+<header>
+	<h2>Links to sites about my hobbies</h2>
+</header>
+
+<nav>
+        <a href="http://foodnetwork.com">Food Network</a>
+	<a href="http://foodandwine.com">Food and Wine Magazine</a>
+	<a href="http://food.com">Recipies</a>
+</nav>
+</section>
+
+<section id="center">
+<header>
+	<h2>Pictures of food</h2>
+</header>
+
+<figure>
+<img src="Images/Shrimp.PNG" name="slide" width="350" height="200">
+<figcaption>This is a moving slideshow on food</figcaption>
+</figure>
+
+<script>
+var step=1
+function slideit() {
+if (!document.images)
+return
+document.images.slide.src=eval("image" + step + ".src")
+if (step<4)
+step++
+else
+step=1
+setTimeout("slideit()",2400)
+}
+slideit()
+</script>
+
+<div class="P">This website is a website about food and how I like to cook. I like to cook all the time for my family every single night. I work at a resturant and I make salads and wash dishes. I really like to cook in my spare time for my hobby.</p></div>
+</section>
+
+<section id="footer">
+<header>
+	<h3>Jacob Trabeaux</h3>
+</header>
+<article>
+	<p>My name is Jacob Trabeaux and I am creating a website on food</p>
+	<p>&copy; 2014 J Trabeaux</p>
+</article>
+</section>
+
+</body>
+
+</html>
