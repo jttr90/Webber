@@ -1,9 +1,0 @@
-body {text-align: center;
-      background-image:url('Images/Tile.png');
-}
-
-h1 {font-size: xx-large;}
-nav a:link {background-color: #ffffff;}
-nav a:visited {background-color: #ccffcc;}
-nav a:hover {background-color: #666666;}
-nav a:active {background-color: #ccffff;}
